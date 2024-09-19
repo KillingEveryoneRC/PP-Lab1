@@ -74,7 +74,6 @@ public class Main {
 
         System.out.print("Введіть кількість чисел Фібоначчі (N): ");
         int N = scanner.nextInt();
-        int sum = 0;
 
         FibonacciNumber[] fibonacciNumbers = new FibonacciNumber[N];
 
@@ -82,7 +81,6 @@ public class Main {
         for (int i = 0; i < N; i++) {
             int fibValue = fibonacci(i);
             fibonacciNumbers[i] = new FibonacciNumber(i, fibValue);
-            sum += fibValue;
         }
 
         // Перевіряємо, які з них можна записати у формі w^3 + 1
